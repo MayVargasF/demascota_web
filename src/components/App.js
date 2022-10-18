@@ -1,13 +1,14 @@
 import "../styles/App.scss";
+import logo from "../images/logoDemascota.jpg";
 
 function App() {
   return (
     <>
-      <header>
-        <img class="logo" src="./assets/images/logo.png" alt="Logo Demascota" />
+      <header className="header">
+        <img className="header__logo" src={logo} alt="Logo Demascota" />
 
-        <nav>
-          <ul class="menu">
+        <nav className="header__nav">
+          <ul className="header__nav--menu">
             <li>
               <a href="#">Conócenos</a>
             </li>
@@ -32,7 +33,7 @@ function App() {
 
       <main></main>
       <footer>
-        <div class="">
+        {/* <div className="">
           <h4>Contacto</h4>
           <nav>
             <ul>
@@ -44,7 +45,7 @@ function App() {
               </li>
             </ul>
           </nav>
-        </div>
+        </div> */}
       </footer>
     </>
   );
